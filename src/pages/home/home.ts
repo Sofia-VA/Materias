@@ -43,7 +43,7 @@ export class HomePage {
   {
     this.navCtrl.push(this.papps);
   }
-  clickCS()
+  clickCs()
   {
     this.navCtrl.push(this.cs);
   }
