@@ -4,6 +4,7 @@ import { HistoriaPage } from '../historia/historia';
 import { DibujoPage } from '../dibujo/dibujo';
 import { ComunicacionPage } from '../comunicacion/comunicacion';
 import { CalPage } from '../cal/cal';
+import { PappsPage } from '../papps/papps';
 
 @Component({
   selector: 'page-home',
@@ -14,6 +15,7 @@ export class HomePage {
   dibujo=DibujoPage;
   com=ComunicacionPage;
   cal=CalPage;
+  papps=PappsPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -34,6 +36,10 @@ export class HomePage {
   clickCalculo()
   {
     this.navCtrl.push(this.cal);
+  }
+  clickPapps()
+  {
+    this.navCtrl.push(this.papps);
   }
 
 
