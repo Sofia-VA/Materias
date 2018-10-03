@@ -6,6 +6,7 @@ import { ComunicacionPage } from '../comunicacion/comunicacion';
 import { CalPage } from '../cal/cal';
 import { PappsPage } from '../papps/papps';
 import { CsPage } from '../cs/cs';
+import { RobPage } from '../rob/rob';
 
 @Component({
   selector: 'page-home',
@@ -18,6 +19,7 @@ export class HomePage {
   cal=CalPage;
   papps=PappsPage;
   cs=CsPage;
+  rob=RobPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -46,6 +48,10 @@ export class HomePage {
   clickCs()
   {
     this.navCtrl.push(this.cs);
+  }
+  clickRob()
+  {
+    this.navCtrl.push(this.rob);
   }
 
 
