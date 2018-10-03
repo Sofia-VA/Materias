@@ -7,6 +7,7 @@ import { CalPage } from '../cal/cal';
 import { PappsPage } from '../papps/papps';
 import { CsPage } from '../cs/cs';
 import { RobPage } from '../rob/rob';
+import { MiPage } from '../mi/mi';
 
 @Component({
   selector: 'page-home',
@@ -20,6 +21,7 @@ export class HomePage {
   papps=PappsPage;
   cs=CsPage;
   rob=RobPage;
+  mi=MiPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -52,6 +54,10 @@ export class HomePage {
   clickRob()
   {
     this.navCtrl.push(this.rob);
+  }
+  clickMi()
+  {
+    this.navCtrl.push(this.mi);
   }
 
 
